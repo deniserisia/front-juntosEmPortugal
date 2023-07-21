@@ -1,0 +1,54 @@
+/* Estilos gerais para o header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  /* Estilos para a logo */
+  .logo {
+    /* Ajuste o tamanho, margens e outros estilos da logo conforme necessário */
+  }
+  
+  /* Estilos para a navegação */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px; /* Trocamos para margin-left para afastar os links da direita */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff9900;
+  }
+  
+  /* Estilos para o efeito visual */
+  nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(51, 51, 51, 0), rgba(51, 51, 51, 0.8));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  nav:hover::before {
+    opacity: 1;
+}  
